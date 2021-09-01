@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bookish</title>
-</head>
-<body>
-	<!-- *Header Start -->
-	<header></header>
-	<!-- *Main Body Strat -->
-	<main></main>
-	<!-- *Footer Start -->
-	<footer></footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookish</title>
+		<!-- *Tailwind CDN -->
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<!-- *Custom CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- *Header Start -->
+		<header>
+			<img
+				class="object-cover h-80 w-full absolute top-0"
+				src="images/cover.jpg"
+				alt=""
+			/>
+			<div class="overlay h-80 w-full absolute top-0"></div>
+			<div class="flex justify-center mx-auto mt-16">
+				<div
+					class="
+						flex
+						justify-center
+						mt-16
+						container
+						absolute
+						container
+						w-full
+					"
+				>
+					<input
+						id="book-search"
+						onsubmit="return false;"
+						class="
+							border
+							p-3
+							px-5
+							focus:no-border focus:outline-none
+							w-60
+							md:w-96
+							text-xl
+							rounded-l-md
+						"
+						type="text"
+						placeholder="Enter Book Title..."
+					/>
+					<button
+						onclick="searchBook()"
+						class="
+							p-3
+							text-xl text-white
+							px-4
+							rounded-r-md
+							bg-yellow-500
+						"
+					>
+						Search
+					</button>
+				</div>
+			</div>
+		</header>
+		<!-- *Main Body Strat -->
+		<main></main>
+		<!-- *Footer Start -->
+		<footer></footer>
+	</body>
 </html>
