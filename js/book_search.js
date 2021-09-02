@@ -31,6 +31,7 @@ const fetchBook = (query) => {
 const displayCards = (data) => {
 	console.log(data);
 	cards.innerHTML = '';
+
 	if (data.num_found === 0) {
 		heading.innerText = `No Result found!!`;
 	} else {
@@ -41,7 +42,7 @@ const displayCards = (data) => {
 				`<div
 					class="
 						card
-						w-60
+						w-64
 						bg-white
 						rounded-xl
 						overflow-hidden
@@ -66,18 +67,19 @@ const displayCards = (data) => {
 						alt=""
 					/>
 					<div class="p-4">
-						<h1 class="text-xl font-bold mt-0">${
-							doc.title ? doc.title : "'No Title!!"
-						}</h1>
-						<p class="mt-2 text-lg font-semibold text-gray-600">
+						<h1 class="text-xl font-bold mt-0">${doc.title ? doc.title : "'No Title!!"}</h1>
+						<p class="text-lg font-semibold text-gray-600">
 							by ${doc.author_name ? doc.author_name[0] : "'No Author Found!!'"}
 						</p>
-						<p class="mt-1 text-gray-500">
+						<p class="mt-2 text-gray-500">
 							Published in ${
 								doc.first_publish_year
 									? doc.first_publish_year
 									: "'Not Found!!'"
 							}
+						</p>
+						<p class="text-gray-400 text-sm">
+							Published by ${doc.publisher ? doc.publisher[0] : "'Not Found!!'"}
 						</p>
 					</div>
 				</div>`
