@@ -13,15 +13,17 @@
 		<!-- *Custom CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
+	<body class="bg-gray-100 ">
 		<!-- *Header Start -->
 		<header>
+			<!-- *Background Image and overlay -->
 			<img
 				class="object-cover h-80 w-full absolute top-0"
 				src="images/cover.jpg"
 				alt=""
 			/>
 			<div class="overlay h-80 w-full absolute top-0"></div>
+			<!-- *Search Field -->
 			<div class="flex justify-center mx-auto mt-16">
 				<div
 					class="
@@ -66,8 +68,28 @@
 			</div>
 		</header>
 		<!-- *Main Body Strat -->
-		<main></main>
+		<main class="w-full pt-64">
+			<h2
+				id="heading"
+				class="
+					text-center text-2xl
+					py-5
+					text-gray-400
+					uppercase
+					font-semibold
+				"
+			>Welcome to Bookish!!</h2>
+			<hr>
+			<div
+				id="card-container"
+				class="mx-auto flex flex-wrap justify-center px-5"
+			>
+			</div>
+		</main>
 		<!-- *Footer Start -->
 		<footer></footer>
+
+		<!-- *Custom JS -->
+		<script src="js/book_search.js"></script>
 	</body>
 </html>

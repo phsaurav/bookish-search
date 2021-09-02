@@ -1,4 +1,16 @@
+/* *Common CSS */
+.body{
+	margin:0;
+	padding: 0;
+}
+
+/* *Header CSS */
 .overlay{
 	background-color: rgba(0, 0, 0, 0.50);
 	overflow: hidden;
+}
+
+/* *Main Body CSS */
+.card{
+	height: 480px
 }
