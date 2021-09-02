@@ -42,7 +42,7 @@ const displayCards = (data) => {
 				`<div
 					class="
 						card
-						w-64
+						w-72
 						bg-white
 						rounded-xl
 						overflow-hidden
@@ -55,6 +55,7 @@ const displayCards = (data) => {
 						mx-5
 						my-5
 						overflow-y-auto
+						text-center
 					"
 				>
 					<img
